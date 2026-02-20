@@ -11,13 +11,7 @@ crate-type = ["cdylib", "rlib"]
 testutils = ["soroban-sdk/testutils"]
 
 [dependencies]
-soroban-sdk = "21.0.0"
+soroban-sdk = "21.7.7"
 
 [dev-dependencies]
-soroban-sdk = { version = "21.0.0", features = ["testutils"] }
-
-[profile.release]
-opt-level = "z"
-lto = true
-codegen-units = 1
-strip = "symbols"
+soroban-sdk = { version = "21.7.7", features = ["testutils"] }
