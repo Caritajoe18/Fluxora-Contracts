@@ -770,7 +770,7 @@
             "data": {
               "vec": [
                 {
-                  "string": "caught panic 'start_time must be before end_time' from contract function 'Symbol(obj#169)'"
+                  "string": "caught panic 'end_time must be greater than start_time' from contract function 'Symbol(obj#169)'"
                 },
                 {
                   "address": "CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK3IM"

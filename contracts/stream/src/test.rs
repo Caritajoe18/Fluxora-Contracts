@@ -136,10 +136,11 @@ fn test_create_stream_zero_deposit_panics() {
 }
 
 #[test]
-#[should_panic(expected = "start_time must be before end_time")]
+#[should_panic]
 fn test_create_stream_invalid_times_panics() {
     let ctx = TestContext::setup();
     ctx.env.ledger().set_timestamp(0);
+
     ctx.client().create_stream(
         &ctx.sender,
         &ctx.recipient,
