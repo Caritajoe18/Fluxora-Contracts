@@ -116,7 +116,7 @@ impl FluxoraStream {
         env.storage().instance().set(&DataKey::NextStreamId, &0u64);
         env.storage().instance().extend_ttl(17280, 120960);
     }
-
+    #[allow(clippy::too_many_arguments)]
     pub fn create_stream(
         env: Env,
         sender: Address,
